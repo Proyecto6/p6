@@ -3,41 +3,99 @@
 	session_start();
 	//incluimos el fichero conexion.proc.php que realiza la conexión a MySQL
 	include("conexion.proc.php");
-	//codificamos la contraseña
-	//$pass_encriptada=md5($_REQUEST['pass']);
+	
 	//generamos la consulta para encontrar usuario Y contraseña
-	$sql = "SELECT * FROM tbl_usuario WHERE usu_nombre = '$_REQUEST[nombre]' AND usu_password = '$_REQUEST[password]'";
-	//ejecutamos la consulta
-	echo $sql;
-	$resultado = mysqli_query($conexion,$sql);
+	$sqlalumno = "SELECT * FROM tbl_usuarioalumno WHERE usa_nombre = '$_REQUEST[nombre]' AND usa_password = '$_REQUEST[password]'";
 
+	$sqlexterno = "SELECT * FROM tbl_usuarioexterno WHERE use_nombre = '$_REQUEST[nombre]' AND use_password = '$_REQUEST[password]'";
+
+	$sqlprofesor = "SELECT * FROM tbl_usuarioexterno WHERE usp_nombre = '$_REQUEST[nombre]' AND usp_password = '$_REQUEST[password]'";
+	
+
+	//ejecutamos la consulta
+	echo $sqlalumno;
+	echo $sqlexterno;
+	echo $sqlprofesor;
+
+	$rstalumno = mysqli_query($conexion,$sqlalumno);
+	$rstexterno = mysqli_query($conexion,$sqlexterno);
+	$rstprofesor = mysqli_query($conexion,$sqlprofesor);
 	//si la consulta devuelve un registro se ha encontrado coincidencia de usuario y contraseña con lo que el usuario es correcto
-	if(mysqli_num_rows($resultado)==1){
+	if(mysqli_num_rows($rstalumno)==1){
 		//extraemos los datos de ese usuario para poder coger el nivel de acceso
-		$datos_usuario=mysqli_fetch_array($resultado);
+		$datos_alumno=mysqli_fetch_array($rstalumno);
 
 		//creamos la variable de sesión alias
-		$_SESSION['usu_id']=$datos_usuario['usu_id'];
-		$_SESSION['usu_nombre']=$datos_usuario['usu_nombre'];
-		$_SESSION['usu_email']=$datos_usuario['usu_email'];
-		$_SESSION['usu_foto']=$datos_usuario['usu_foto'];
+		$_SESSION['usa_id']=$datos_alumno['usa_id'];
+		$_SESSION['usa_nombre']=$datos_alumno['usa_nombre'];
+		$_SESSION['tipo_id']=$datos_alumno['tipo_id'];
+	
 
-		//echo $datos_usuario['usu_id'];
-		//echo $datos_usuario['usu_nombre'];
-		//echo $datos_usuario['usu_email'];
-		//echo $datos_usuario['usu_foto'];
-		
-		//echo $_SESSION['usu_id'];
-		//echo $_SESSION['usu_nombre'];
-		//echo $_SESSION['usu_email'];
-		//echo $_SESSION['usu_foto'];
 
-		//redirigimos a la página principal
-		header("location: main.php");
+		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
+            //redirigimos a la página principal de profesores
+			header("location: mainprofesores.php");
+        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
+            //redirigimos a la página principal los demas.
+			header("location: main.php");
+        }
+
 	} else {
 		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
 		$_SESSION['error']="Usuario o contraseña incorrectos";
 		header("location: login.php");
 	}
+
+	if(mysqli_num_rows($rstexterno)==1){
+		//extraemos los datos de ese usuario para poder coger el nivel de acceso
+		$datos_externo=mysqli_fetch_array($rstexterno);
+
+		//creamos la variable de sesión alias
+		$_SESSION['use_id']=$datos_externo['use_id'];
+		$_SESSION['use_nombre']=$datos_externo['use_nombre'];
+		$_SESSION['tipo_id']=$datos_externo['tipo_id'];
+	
+
+
+		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
+            //redirigimos a la página principal de profesores
+			header("location: mainprofesores.php");
+        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
+            //redirigimos a la página principal los demas.
+			header("location: main.php");
+        }
+
+	} else {
+		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
+		$_SESSION['error']="Usuario o contraseña incorrectos";
+		header("location: login.php");
+	}
+
+
+	if(mysqli_num_rows($rstprofesor)==1){
+		//extraemos los datos de ese usuario para poder coger el nivel de acceso
+		$datos_profesor=mysqli_fetch_array($rstprofesor);
+
+		//creamos la variable de sesión alias
+		$_SESSION['usp_id']=$datos_profesor['usp_id'];
+		$_SESSION['usp_nombre']=$datos_profesor['usp_nombre'];
+		$_SESSION['tipo_id']=$datos_profesor['tipo_id'];
+	
+
+
+		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
+            //redirigimos a la página principal de profesores
+			header("location: mainprofesores.php");
+        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
+            //redirigimos a la página principal los demas.
+			header("location: main.php");
+        }
+
+	} else {
+		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
+		$_SESSION['error']="Usuario o contraseña incorrectos";
+		header("location: login.php");
+	}
+
 
 ?>

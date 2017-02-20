@@ -1,0 +1,656 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tbl_u",
+				"tbl_usuarioalumno"
+			],
+			[
+				"tbl_p",
+				"tbl_proyecto"
+			],
+			[
+				"crea",
+				"createTextNode"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mys",
+				"mysql_connect"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"ma",
+				"maxlength\tAttr"
+			],
+			[
+				"nombre",
+				"nombrearchivo"
+			],
+			[
+				"nom",
+				"nombrearchivo"
+			],
+			[
+				"cur",
+				"curso"
+			],
+			[
+				"col",
+				"col-lg-12"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"co",
+				"compruebaDisp"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ons",
+				"onsubmit\tAttr"
+			],
+			[
+				"e",
+				"element_5"
+			],
+			[
+				"el",
+				"element_6"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"va",
+				"validar"
+			],
+			[
+				"ele",
+				"element_6"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"tbl",
+				"tbl_reservas"
+			],
+			[
+				"tbl_r",
+				"tbl_recursos"
+			],
+			[
+				"tbl_",
+				"tbl_usuarios"
+			],
+			[
+				"usu",
+				"usuexiste"
+			],
+			[
+				"reu",
+				"recursos"
+			],
+			[
+				"rec",
+				"rec_id"
+			],
+			[
+				"re",
+				"rec_id"
+			],
+			[
+				"fecha",
+				"fechafinal"
+			],
+			[
+				"fehc",
+				"fechafinal"
+			],
+			[
+				"fec",
+				"fechafin"
+			],
+			[
+				"fechai",
+				"fechaini"
+			],
+			[
+				"fe",
+				"fechafin"
+			],
+			[
+				"res_fecha",
+				"res_fechafin"
+			],
+			[
+				"fechafin",
+				"fechafin"
+			],
+			[
+				"con",
+				"conexion"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"n",
+				"NULL"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "login.php",
+			"settings":
+			{
+				"buffer_size": 1232,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "login.proc.php",
+			"settings":
+			{
+				"buffer_size": 3679,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "alta_usuario.php",
+			"settings":
+			{
+				"buffer_size": 1385,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/9199.joan23/Documents/GitHub/p6",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6"
+	],
+	"file_history":
+	[
+		"/C/Users/9199.joan23/Documents/Proyecto 3 XAMP.sublime-project",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/conexion.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.php",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/login.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/alta_usuario.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/alta_usuariophp.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/conexion.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/mainCOPIA.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto3/bd_cromo.sql",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/main.php",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/bd/bd_voteit.sql",
+		"/C/Users/9199.joan23/Downloads/bd_voteit.sql",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/main.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/js/validacion.js",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/gulpfile.js",
+		"/C/xampp/htdocs/ajax/alumnos2/registro.php",
+		"/C/xampp/htdocs/ajax/alumnos2/consulta.php",
+		"/C/xampp/htdocs/ajax/alumnos2/alumnos_registro.php",
+		"/C/xampp/htdocs/ajax/alumnos2/ajax.js",
+		"/C/Users/9199.joan23/Downloads/index.php",
+		"/C/xampp/htdocs/ajax/alumnos2/ajax.sql",
+		"/C/xampp/htdocs/ajax/alumnos2/previsionMeteorologicaCAT.php",
+		"/C/xampp/htdocs/ajax/alumnos/previsionMeteorologicaCAT.php",
+		"/C/xampp/htdocs/ajax/alumnos/consulta.php",
+		"/C/xampp/htdocs/ajax/alumnos/alumnos_registro.php",
+		"/C/xampp/htdocs/ajax/alumnos/registro.php",
+		"/C/xampp/htdocs/ajax/alumnos/ajax.js",
+		"/C/xampp/htdocs/ajax/alumnos/ajax.sql",
+		"/C/xampp/htdocs/ajax/P3/hello3.html",
+		"/C/xampp/htdocs/ajax/P3/holaMundo.php",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/index.html",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/holamundo.php",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprobar_random.html",
+		"/C/xampp/htdocs/imagenesmain/2.php",
+		"/C/xampp/htdocs/imagenesmain/3.php",
+		"/C/xampp/htdocs/imagenesmain/conexion.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/alta_usuario.proc.php",
+		"/C/xampp/htdocs/imagenesmain/index.html",
+		"/C/xampp/htdocs/imagenesmain/1.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/conexion.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/alta_usuario.php",
+		"/C/xampp/htdocs/imagenes en main/1.php",
+		"/C/xampp/htdocs/imagenes en main/3.php",
+		"/C/xampp/htdocs/imagenes en main/2.php",
+		"/C/xampp/htdocs/upfiles/3.php",
+		"/C/xampp/htdocs/upfiles/1.php",
+		"/C/xampp/htdocs/upfiles/2.php",
+		"/C/Users/9199.joan23/Downloads/2.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/161002_exercici1.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/160926_exemple1.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/160923_exercici1.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/160921_exemple4.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/160919_exemple1.php",
+		"/C/xampp/htdocs/ejercicios/Exemples/160919_exemple2.php",
+		"/C/xampp/htdocs/subirfficheros/3.php",
+		"/C/xampp/htdocs/subirfficheros/2.php",
+		"/C/xampp/htdocs/subirfficheros/1.php",
+		"/C/xampp/htdocs/subirfficheros/index.html",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/addformulario.html",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/alumnos/ajax.sql",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/alumnos/ajax.js",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/alumnos/registro.php",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/alumnos/alumnos_registro.php",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/alumnos/consulta.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/inserts.sql",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/addanucios.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/index.html",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/consulta.php",
+		"/C/Users/9199.joan23/AppData/Local/Temp/fz3temp-2/menu_contacto.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/mapa_contactos.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/mapa_contactos.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/main.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/indexcopy.html",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/modificar_contacto.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/menu_contacto.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/datos.sql",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/contacto.sql",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/vendor/bootstrap/css/bootstrap.css",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/modificar_usuario.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/index.html",
+		"/C/xampp/htdocs/Proyectos/repositorio/menu_contacto.php",
+		"/C/Users/9199.joan23/Documents/GitHub/repositorio/eliminar_usuario.proc.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/main.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/modificar_contacto.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/anadir_contacto.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/modificar_usuario.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/index.html",
+		"/C/xampp/htdocs/Proyectos/repositorio/indexcopy.html",
+		"/C/xampp/htdocs/Proyectos/repositorio/css/agency.css",
+		"/C/xampp/htdocs/Proyectos/repositorio/vendor/bootstrap/css/bootstrap.css",
+		"/C/xampp/htdocs/ajax/mapa con api.html",
+		"/C/xampp/htdocs/ajax/mapa con api buscador.html",
+		"/C/xampp/htdocs/Proyectos/repositorio/anadir_contactoCOPIA.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/loginCopia.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/login.php",
+		"/C/xampp/htdocs/Proyectos/repositorio/index.php",
+		"/G/Proyecto 5/index.html",
+		"/G/Proyecto 5/css/agency.css",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/index.html",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/css/agency.css",
+		"/C/xampp/htdocs/EYE/vendor/bootstrap/css/bootstrap.css",
+		"/C/xampp/htdocs/EYE/index.html",
+		"/C/xampp/htdocs/EYE/css/freelancer.css",
+		"/C/Users/9199.joan23/Desktop/Slider/ScatteredPolaroidsGallery/index.html",
+		"/C/Users/9199.joan23/Desktop/Slider/ScatteredPolaroidsGallery/README.md",
+		"/C/xampp/htdocs/EYE/vendor/font-awesome/css/font-awesome.css",
+		"/C/xampp/htdocs/EYE/js/jqBootstrapValidation.js",
+		"/C/xampp/htdocs/EYE/js/contact_me.js",
+		"/C/xampp/htdocs/EYE/mail/contact_me.php",
+		"/C/xampp/htdocs/EYE/js/freelancer.min.js",
+		"/C/xampp/htdocs/EYE/js/freelancer.js",
+		"/C/xampp/htdocs/Bootstrap/css/freelancer.css",
+		"/C/xampp/htdocs/Bootstrap/vendor/font-awesome/css/font-awesome.css",
+		"/C/xampp/htdocs/Bootstrap/index.html",
+		"/C/xampp/htdocs/Bootstrap/css/freelancer.min.css",
+		"/G/DaW/Bootstrap/css/bootstrap.min.css",
+		"/G/DaW/Bootstrap/css/bootstrap.css",
+		"/G/DaW/Bootstrap/css/bootstrap-theme.css",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/holaMundo.php",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello2.html",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprobar_random.php",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprovar_random.php",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/hello3.html",
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/holamundo",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello3.html",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello.html",
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/holaMundo.php"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open files>,<open folders>,<open folders>",
+			"<open files>,<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"usu_",
+			"part",
+			"\t\t\t\n",
+			"<h6 style='color: #ffffff'>",
+			"<h6>",
+			"style='color: #ffffff'",
+			"<h6 ",
+			"<h6",
+			"<input",
+			"<inp",
+			"<inpunt",
+			"<input",
+			"<inpunt ",
+			"<inpunt",
+			"<label",
+			"<label>",
+			"<h6>",
+			"</h6>",
+			"<h6>",
+			"li",
+			"if (file_exists ($foto)){\n                           echo \"<div class='col-xs-1'></div><div class='col-sm-4 text-center'> <a href='menu_contacto.php?cont_id=\".$contacto['cont_id'].\"'> <img src=\".$foto.\" width='170' height='170' class='img-responsive img-circle' alt=\".$foto.\" style='background-color: white' align='center' /></a></div>\";\n                        } else {\n                            echo \"<div class='col-xs-1'></div><div class='col-sm-4 text-center'><a href='menu_contacto.php?cont_id=\".$contacto['cont_id'].\"'><img src='img/0.png' width='170' height='170' class='img-responsive img-circle' alt='Imagen no encontrada' style='background-color: white' align='center' /></a></div>\";\n                        }\n",
+			"('/",
+			"services",
+			"header",
+			"teléfono",
+			"#5cb85c",
+			"col-lg-12",
+			"contain",
+			"col-lg-12",
+			"col-lg-12 text-center",
+			"row",
+			"div",
+			"btn btn-success btn-lg",
+			"index",
+			"page-",
+			"page-top",
+			"body",
+			"portfolio",
+			"port-folio",
+			"#18BC9C",
+			"conta",
+			"categoria",
+			"tbl_serie",
+			"200px",
+			"-",
+			"..",
+			"required",
+			" ></",
+			"<p>&copy; 2016 Proyecto 2 <span>Designed with by Eric</span></p>",
+			"<p>&copy; 2016 Proyecto 2 <span>Designed with by Roger/Eric/Musta</span></p>",
+			"<p>&copy; 2016 Proyecto 2 <span>Designed with by Roger/Eric/Musta</span></p>\t",
+			"<p>&copy; 2016 Proyecto 2 <span>Designed with by Eric</span></p>\n",
+			"echo \"<li style='color: #2EFE64;''><a class='active' href='#'>Administración</a></li> \";",
+			"3c9909afec25354",
+			"');\n",
+			"fechaencurso",
+			"mysql",
+			"form",
+			"<input type=\"submit\"",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" <h7 class='control'>",
+			" ",
+			"<h7 class='control'",
+			"<inpunt class='form-control'",
+			"<inpunt 'class='form-control'",
+			"<h6 style='color: #ffffff'>",
+			"",
+			"h6",
+			"\n                        if (file_exists ($foto)){\n                           echo \"<div class='col-xs-1'></div><div class='col-sm-4 text-center'> <a href='menu_contacto.php?cont_id=\".$contacto['cont_id'].\"'> <img src=\".$foto.\" width='170' height='170' class='img-responsive img-circle' alt=\".$foto.\" style='background-color: white' align='center' /></a></div>\";\n                        } else {\n                            echo \"<div class='col-xs-1'></div><div class='col-sm-4 text-center'><a href='menu_contacto.php?cont_id=\".$contacto['cont_id'].\"'><img src='img/0.png' width='170' height='170' class='img-responsive img-circle' alt='Imagen no encontrada' style='background-color: white' align='center' /></a></div>\";\n                        }",
+			"#328de0",
+			"",
+			"<p>&copy; 2016 Proyecto 3 <span>Designed with by Eric</span></p>",
+			"echo \"<li style='color: #2EFE64;''><a class='active' href='administracion.php'>Administración</a></li> \";",
+			"123",
+			"<input style=\"color:white; background-color:#1FB57B;\" type=\"submit\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 400.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "login.proc.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								738
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "alta_usuario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "proyecto 6.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 355.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
