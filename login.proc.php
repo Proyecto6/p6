@@ -32,13 +32,11 @@
 	
 
 
-		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
-            //redirigimos a la página principal de profesores
-			header("location: mainprofesores.php");
-        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
-            //redirigimos a la página principal los demas.
+		if(isset($datos_alumno['tipo_id'])== 1 ){
+            //redirigimos a la página principal de los demas.
 			header("location: main.php");
-        }
+		}
+      
 
 	} else {
 		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
@@ -57,12 +55,10 @@
 	
 
 
-		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
-            //redirigimos a la página principal de profesores
-			header("location: mainprofesores.php");
-        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
-            //redirigimos a la página principal los demas.
+		if(isset($datos_externo['tipo_id'])== 3 ){
+            //redirigimos a la página principal de los demas
 			header("location: main.php");
+     
         }
 
 	} else {
@@ -83,19 +79,19 @@
 	
 
 
-		if(isset($datos_usuario['tipo_id'])= 2 or 3 ){
+		if(isset($datos_profesor['tipo_id'])== 2 || 4){
             //redirigimos a la página principal de profesores
 			header("location: mainprofesores.php");
-        } else{(isset($datos_usuario['tipo_id'])!= 2 or 3)
+        } /*else{(isset($datos_profesor['tipo_id'])!= 2 || 4)
             //redirigimos a la página principal los demas.
 			header("location: main.php");
-        }
+        }*/
 
 	} else {
 		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
 		$_SESSION['error']="Usuario o contraseña incorrectos";
 		header("location: login.php");
 	}
-
-
+	
+	
 ?>
