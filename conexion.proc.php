@@ -1,6 +1,6 @@
 <?php
 	//conectamos con la base de datos
-	$conexion = mysqli_connect("localhost", "root", "", "nombre_bbdd");
+	$conexion = mysqli_connect("localhost", "root", "", "bd_voteit");
 //le decimos a la conexión que los datos los devuelva diréctamente en utf8, así no hay que usar htmlentities
     $acentos = mysqli_query($conexion, "SET NAMES 'utf8'");
 	//si no se puede realizar la conexión, se muestra error
