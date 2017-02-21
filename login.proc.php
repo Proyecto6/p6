@@ -9,7 +9,7 @@
 
 	$sqlexterno = "SELECT * FROM tbl_usuarioexterno WHERE use_nombre = '$_REQUEST[nombre]' AND use_password = '$_REQUEST[password]'";
 
-	$sqlprofesor = "SELECT * FROM tbl_usuarioexterno WHERE usp_nombre = '$_REQUEST[nombre]' AND usp_password = '$_REQUEST[password]'";
+	$sqlprofesor = "SELECT * FROM tbl_usuarioprof WHERE usp_nombre = '$_REQUEST[nombre]' AND usp_password = '$_REQUEST[password]'";
 	
 
 	//ejecutamos la consulta

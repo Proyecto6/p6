@@ -21,7 +21,7 @@
 
 <body>
  
-  <h1 style="color:#43A047;">My contacts</h1>
+  <h1 style="color:#43A047;">VOTE IT</h1>
   
             <?php
               if(isset($error)){
