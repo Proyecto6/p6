@@ -172,47 +172,21 @@
 	"buffers":
 	[
 		{
-			"file": "login.php",
-			"settings":
-			{
-				"buffer_size": 1232,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "login.proc.php",
-			"settings":
-			{
-				"buffer_size": 3362,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/main.php",
-			"settings":
-			{
-				"buffer_size": 813,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "bd/insert-tbl_usuarioalumno.sql",
-			"settings":
-			{
-				"buffer_size": 5632,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "alta_usuario.php",
 			"settings":
 			{
-				"buffer_size": 1385,
+				"buffer_size": 1664,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "alta_usuario.proc.php",
+			"settings":
+			{
+				"buffer_size": 1095,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -248,12 +222,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/9199.joan23/Documents/GitHub/p6",
-		"/C/xampp/htdocs/Proyectos/Proyecto 6",
-		"/C/xampp/htdocs/Proyectos/Proyecto 6/js"
+		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6",
+		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/logo"
 	],
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/login.proc.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/alta_usuario.php",
 		"/C/Users/9199.joan23/Documents/Proyecto 3 XAMP.sublime-project",
 		"/C/Users/9199.joan23/Documents/GitHub/p6/conexion.proc.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
@@ -378,10 +354,7 @@
 		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprobar_random.php",
 		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprovar_random.php",
 		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/hello3.html",
-		"/C/xampp/htdocs/ajax/ejemplo Ajax/holamundo",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello3.html",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello.html",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/holaMundo.php"
+		"/C/xampp/htdocs/ajax/ejemplo Ajax/holamundo"
 	],
 	"find":
 	{
@@ -494,24 +467,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "login.php",
+					"file": "alta_usuario.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1232,
+						"buffer_size": 1664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1578,
+								1578
 							]
 						],
 						"settings":
@@ -521,27 +494,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 361.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "login.proc.php",
+					"file": "alta_usuario.proc.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3362,
+						"buffer_size": 1095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1321,
-								1321
+								0,
+								0
 							]
 						],
 						"settings":
@@ -550,98 +523,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 513.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/main.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 813,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "bd/insert-tbl_usuarioalumno.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5632,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1384
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "alta_usuario.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1385,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 418.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -724,7 +609,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 213.0,
+	"side_bar_width": 355.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
