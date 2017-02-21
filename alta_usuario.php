@@ -26,21 +26,22 @@
   
            
 
-   <ul> <form name="Login" action="alta_usuario.proc.php" onsubmit="return validar();">
-      <li><label>Nombre de usuario: </label><input type="text" id="nombre" name="nombre" placeholder="usuario" required onfocus="document.Login.nombre.style.color='';" /></li>
-      <li><label>Contraseña: </label><input type="password" id="password" name="password" placeholder="contraseña" required onfocus="document.Login.password.style.color='';"/></li>
-     <li><label for="email">Email: </label> <input type="email" name="email" placeholder="email@email.com" required /> <span class="form_hint">Formato correcto: "name@something.com"</span> </li>
+   <form name="Login" action="alta_usuario.proc.php" onsubmit="return validar();">
+    <p>Introduce tus datos para registrarte</p>
+    
+    <label>Usuario: </label><input type="text" id="nombre" name="nombre" placeholder="Usuario" required onfocus="document.Login.nombre.style.color='';" /><br/>
+    <label>Contraseña: </label><input type="password" id="password" name="password" placeholder="Contraseña" required onfocus="document.Login.password.style.color='';"/><br/>
+    <label for="email">Email: </label> <input type="email" name="email" placeholder="Correo" required /> <span class="form_hint">Formato correcto: "name@something.com"</span><br/>
      <!-- <li><label>Tu foto: </label><input id="foto" name="foto" type="file" ></li> -->
      <?php if (isset($error)){
                   echo "<h4>" . $error . "</h4>";
                   unset($error);
                   unset($_SESSION['error_usuario']); 
                   }
-                  ?>
+                  ?><br/>
       <button type="submit">Registrarse</button>
    
     </form>
- </ul>
   
 </body>
 </html>

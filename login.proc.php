@@ -13,9 +13,9 @@
 	
 
 	//ejecutamos la consulta
-	echo $sqlalumno;
-	echo $sqlexterno;
-	echo $sqlprofesor;
+	//echo $sqlalumno;
+	//echo $sqlexterno;
+	//echo $sqlprofesor;
 
 	$rstalumno = mysqli_query($conexion,$sqlalumno);
 	$rstexterno = mysqli_query($conexion,$sqlexterno);
