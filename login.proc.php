@@ -35,7 +35,7 @@
 		echo "buscar bien alu";
 		
         //redirigimos a la página principal de los demas.
-		header("location: main.php");
+		header("location: mainalumno.php");
 		echo "alu ok <br>";
 		}
 	elseif(mysqli_num_rows($rstexterno)!=0){
@@ -48,7 +48,7 @@
 		$_SESSION['tipo_id']=$datos_externo['tipo_id'];
 			echo "buscar bien exter";	 
             //redirigimos a la página principal de los demas
-		header("location: main.php");
+		header("location: mainexterno.php");
 		echo "exter ok";
     }
 	elseif(mysqli_num_rows($rstprofesor)!=0){
