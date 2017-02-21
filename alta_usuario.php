@@ -4,6 +4,7 @@
   //si existe la variable de sesión error la guardamos
   if(isset($_SESSION ['error'])){
     $error=$_SESSION['error'];
+    $error_usuario=$_SESSION['error_usuario'];
   }
   //destruimos la sesión para no poder llegar de manera indirecta a ninguna página posterior a la de login
   session_destroy();
@@ -30,7 +31,13 @@
       <li><label>Contraseña: </label><input type="password" id="password" name="password" placeholder="contraseña" required onfocus="document.Login.password.style.color='';"/></li>
      <li><label for="email">Email: </label> <input type="email" name="email" placeholder="email@email.com" required /> <span class="form_hint">Formato correcto: "name@something.com"</span> </li>
      <!-- <li><label>Tu foto: </label><input id="foto" name="foto" type="file" ></li> -->
-      <button>Registrarse</button>
+     <?php if (isset($error)){
+                  echo "<h4>" . $error . "</h4>";
+                  unset($error);
+                  unset($_SESSION['error_usuario']); 
+                  }
+                  ?>
+      <button type="submit">Registrarse</button>
    
     </form>
  </ul>
