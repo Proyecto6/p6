@@ -5,11 +5,11 @@
 	include("conexion.proc.php");
 	
 	//generamos la consulta para encontrar usuario Y contraseña
-	$sqlalumno = "SELECT * FROM tbl_usuarioalumno WHERE usa_nombre = '$_REQUEST[nombre]' AND usa_password = '$_REQUEST[password]'";
+	$sqlalumno = "SELECT * FROM tbl_usuarioalumno WHERE usa_user = '$_REQUEST[nombre]' AND usa_password = '$_REQUEST[password]'";
 
-	$sqlexterno = "SELECT * FROM tbl_usuarioexterno WHERE use_nombre = '$_REQUEST[nombre]' AND use_password = '$_REQUEST[password]'";
+	$sqlexterno = "SELECT * FROM tbl_usuarioexterno WHERE use_user = '$_REQUEST[nombre]' AND use_password = '$_REQUEST[password]'";
 
-	$sqlprofesor = "SELECT * FROM tbl_usuarioprof WHERE usp_nombre = '$_REQUEST[nombre]' AND usp_password = '$_REQUEST[password]'";
+	$sqlprofesor = "SELECT * FROM tbl_usuarioprof WHERE usp_user = '$_REQUEST[nombre]' AND usp_password = '$_REQUEST[password]'";
 	
 
 	//ejecutamos la consulta
@@ -23,7 +23,7 @@
 	//si la consulta devuelve un registro se ha encontrado coincidencia de usuario y contraseña con lo que el usuario es correcto
 
 
-	if(mysqli_num_rows($rstalumno)==1){
+	if(mysqli_num_rows($rstalumno)!=0){
 		//extraemos los datos de ese usuario para poder coger el nivel de acceso
 		$datos_alumno=mysqli_fetch_array($rstalumno);
 
@@ -33,16 +33,12 @@
 		$_SESSION['tipo_id']=$datos_alumno['tipo_id'];
 
 		echo "buscar bien alu";
-		 if(isset($datos_alumno['tipo_id'])== 1){
+		
         //redirigimos a la página principal de los demas.
 		header("location: main.php");
 		echo "alu ok <br>";
 		}
-	
-		
-   	}
-
-	if(mysqli_num_rows($rstexterno)!=0){
+	elseif(mysqli_num_rows($rstexterno)!=0){
 		//extraemos los datos de ese usuario para poder coger el nivel de acceso
 		$datos_externo=mysqli_fetch_array($rstexterno);
 
@@ -50,35 +46,23 @@
 		$_SESSION['use_id']=$datos_externo['use_id'];
 		$_SESSION['use_nombre']=$datos_externo['use_nombre'];
 		$_SESSION['tipo_id']=$datos_externo['tipo_id'];
-			echo "buscar bien exter";
-
-			  if(isset($datos_externo['tipo_id'])== 3 ){
+			echo "buscar bien exter";	 
             //redirigimos a la página principal de los demas
 		header("location: main.php");
 		echo "exter ok";
-        }
-		
     }
-
-	if(mysqli_num_rows($rstprofesor)!=0){
+	elseif(mysqli_num_rows($rstprofesor)!=0){
 		//extraemos los datos de ese usuario para poder coger el nivel de acceso
 		$datos_profesor=mysqli_fetch_array($rstprofesor);
-
 		//creamos la variable de sesión alias
 		$_SESSION['usp_id']=$datos_profesor['usp_id'];
 		$_SESSION['usp_nombre']=$datos_profesor['usp_nombre'];
 		$_SESSION['tipo_id']=$datos_profesor['tipo_id'];
-
-	echo "buscar bien profe";
-
-	if(isset($datos_profesor['tipo_id'])== 2 || 4){
-        //redirigimos a la página principal de profesores
+		echo "buscar bien profe";
+     	//redirigimos a la página principal de profesores
 		header("location: mainprofesores.php");
 		echo"profe ok";
-        }
-		
-
-    }
+     }
   else {
 		//como no se ha encontrado usuario y contraseña, mandamos a la página login.php un mensaje de error
 		$_SESSION['error']="Usuario o contraseña incorrectos";
