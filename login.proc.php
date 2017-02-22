@@ -48,7 +48,7 @@
 		$_SESSION['tipo_id']=$datos_externo['tipo_id'];
 			echo "buscar bien exter";	 
             //redirigimos a la página principal de los demas
-		header("location: mainalumno.php");
+		header("location: mainexternos.php");
 		echo "exter ok";
     }
 	elseif(mysqli_num_rows($rstprofesor)!=0){

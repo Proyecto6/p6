@@ -19,7 +19,7 @@
   <?php
 
       if(isset($_SESSION['use_nombre']) ){
-      echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";}
+      echo "<p>Hola, bienvenido ".$_SESSION['use_nombre']."!</p>";}
 
       if(isset($_SESSION['usa_nombre']) ){
       echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";
