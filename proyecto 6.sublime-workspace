@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"proye",
+				"proyecto"
+			],
+			[
 				"tbl_u",
 				"tbl_usuarioalumno"
 			],
@@ -172,21 +176,75 @@
 	"buffers":
 	[
 		{
+			"file": "login.php",
+			"settings":
+			{
+				"buffer_size": 1228,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "login.proc.php",
+			"settings":
+			{
+				"buffer_size": 2795,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
+			"settings":
+			{
+				"buffer_size": 2808,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conexion.proc.php",
+			"settings":
+			{
+				"buffer_size": 424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/mainalumno.php",
+			"settings":
+			{
+				"buffer_size": 1328,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Proyectos/Proyecto 5/mainCOPIA.php",
+			"settings":
+			{
+				"buffer_size": 2004,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/js/validacion.js",
+			"settings":
+			{
+				"buffer_size": 559,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "alta_usuario.php",
 			"settings":
 			{
 				"buffer_size": 1664,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "alta_usuario.proc.php",
-			"settings":
-			{
-				"buffer_size": 1095,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -222,18 +280,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6",
-		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/logo"
+		"/C/Users/9199.joan23/Documents/GitHub/p6",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/js",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/js"
 	],
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/login.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/login.proc.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/daw2/proyecto6/p6/alta_usuario.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/funciones.js",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/buscar.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/main.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/conexion.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 5/login.proc.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/bd/bd_voteit.sql",
+		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/consulta.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.php",
+		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/alta_usuario.proc.php",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/bd/insert-tbl_usuarioalumno.sql",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/js/validacion.js",
+		"/C/Users/9199.joan23/Documents/GitHub/p6/login.proc.php",
 		"/C/Users/9199.joan23/Documents/Proyecto 3 XAMP.sublime-project",
 		"/C/Users/9199.joan23/Documents/GitHub/p6/conexion.proc.php",
-		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
-		"/C/xampp/htdocs/Proyectos/Proyecto 6/login.php",
 		"/C/Users/9199.joan23/Documents/GitHub/p6/login.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto 6/alta_usuario.proc.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto 6/alta_usuariophp.php",
@@ -243,7 +311,6 @@
 		"/C/xampp/htdocs/Proyectos/Proyecto 6/main.php",
 		"/C/Users/9199.joan23/Documents/GitHub/p6/bd/bd_voteit.sql",
 		"/C/Users/9199.joan23/Downloads/bd_voteit.sql",
-		"/C/xampp/htdocs/Proyectos/Proyecto 5/main.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto 6/js/validacion.js",
 		"/C/xampp/htdocs/Proyectos/Proyecto 5/gulpfile.js",
 		"/C/xampp/htdocs/ajax/alumnos2/registro.php",
@@ -270,7 +337,6 @@
 		"/C/xampp/htdocs/Proyectos/Proyecto 5/alta_usuario.proc.php",
 		"/C/xampp/htdocs/imagenesmain/index.html",
 		"/C/xampp/htdocs/imagenesmain/1.php",
-		"/C/xampp/htdocs/Proyectos/Proyecto 5/conexion.proc.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto 5/alta_usuario.php",
 		"/C/xampp/htdocs/imagenes en main/1.php",
 		"/C/xampp/htdocs/imagenes en main/3.php",
@@ -298,7 +364,6 @@
 		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/inserts.sql",
 		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/addanucios.php",
 		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/index.html",
-		"/C/xampp/htdocs/Proyectos/Proyecto1_IVAN&ERIC/consulta.php",
 		"/C/Users/9199.joan23/AppData/Local/Temp/fz3temp-2/menu_contacto.php",
 		"/C/Users/9199.joan23/Documents/GitHub/repositorio/mapa_contactos.php",
 		"/C/xampp/htdocs/Proyectos/repositorio/mapa_contactos.php",
@@ -349,12 +414,7 @@
 		"/G/DaW/Bootstrap/css/bootstrap.min.css",
 		"/G/DaW/Bootstrap/css/bootstrap.css",
 		"/G/DaW/Bootstrap/css/bootstrap-theme.css",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/holaMundo.php",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P1/hello2.html",
-		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprobar_random.php",
-		"/C/xampp/htdocs/ajax/ejemplo Ajax/comprovar_random.php",
-		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/hello3.html",
-		"/C/xampp/htdocs/ajax/ejemplo Ajax/holamundo"
+		"/G/DaW/M6 - Desenvolupament web en entorn client/ajax/P3/holaMundo.php"
 	],
 	"find":
 	{
@@ -467,24 +527,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "alta_usuario.php",
+					"file": "login.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1664,
+						"buffer_size": 1228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1578,
-								1578
+								1073,
+								1081
 							]
 						],
 						"settings":
@@ -494,19 +554,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "alta_usuario.proc.php",
+					"file": "login.proc.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1095,
+						"buffer_size": 2795,
 						"regions":
 						{
 						},
@@ -526,7 +586,184 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/login.proc.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1506,
+								1506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "conexion.proc.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/mainalumno.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1163,
+								1163
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/xampp/htdocs/Proyectos/Proyecto 5/mainCOPIA.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1045,
+								1049
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/Proyectos/Proyecto 6/js/validacion.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "alta_usuario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -609,7 +846,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 355.0,
+	"side_bar_width": 213.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

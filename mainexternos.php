@@ -17,12 +17,8 @@
 </head>
 <body>
   <?php
-
-      if(isset($_SESSION['use_nombre']) ){
-      echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";}
-
-      if(isset($_SESSION['usa_nombre']) ){
-      echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";
+      if(isset($_SESSION['usp_nombre']) ){
+        echo "<p>Hola, bienvenido ".$_SESSION['usp_nombre']."!</p>";
 
 
   ?>
@@ -39,7 +35,7 @@
       
       while($proyecto = mysqli_fetch_array($proyectos)){
 
-        echo "<br><a href='preguntasalumno.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br>";
+        echo "<br><a href='preguntasproalumno.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br>";
 
         }
 

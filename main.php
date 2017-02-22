@@ -15,8 +15,8 @@
 </head>
 <body>
   <?php
-      if(isset($_SESSION['usu_nombre']) ){
-        echo "<p>Hola, bienvenido ".$_SESSION['usu_nombre']."!</p>";
+      if(isset($_SESSION['usa_nombre']) ){
+        echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";
 
 
   ?>
