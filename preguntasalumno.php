@@ -19,11 +19,10 @@
   <?php
      
 
-      if(isset($_SESSION['use_nombre']) ){
-        echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";}
+      if(isset($_SESSION['nombre']) ){
+        echo "<p>Hola, bienvenido ".$_SESSION['nombre']."!</p>";
 
-      if(isset($_SESSION['usa_nombre']) ){
-        echo "<p>Hola, bienvenido ".$_SESSION['usa_nombre']."!</p>";
+     
 
 
   ?>
@@ -31,7 +30,7 @@
 
   <?php
   
-    extract($_REQUEST);
+   extract($_REQUEST);
    $sql =" SELECT * from tbl_proyecto  
    inner join tbl_participantes on tbl_proyecto.pro_id=tbl_participantes.pro_id
    inner join tbl_usuarioalumno on tbl_participantes.usa_id= tbl_usuarioalumno.usa_id 

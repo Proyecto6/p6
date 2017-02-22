@@ -28,8 +28,8 @@
 		$datos_alumno=mysqli_fetch_array($rstalumno);
 
 		//creamos la variable de sesión alias
-		$_SESSION['usa_id']=$datos_alumno['usa_id'];
-		$_SESSION['usa_nombre']=$datos_alumno['usa_nombre'];
+		$_SESSION['id']=$datos_alumno['usa_id'];
+		$_SESSION['nombre']=$datos_alumno['usa_nombre'];
 		$_SESSION['tipo_id']=$datos_alumno['tipo_id'];
 
 		echo "buscar bien alu";
@@ -43,20 +43,20 @@
 		$datos_externo=mysqli_fetch_array($rstexterno);
 
 		//creamos la variable de sesión alias
-		$_SESSION['use_id']=$datos_externo['use_id'];
-		$_SESSION['use_nombre']=$datos_externo['use_nombre'];
+		$_SESSION['id']=$datos_externo['use_id'];
+		$_SESSION['nombre']=$datos_externo['use_nombre'];
 		$_SESSION['tipo_id']=$datos_externo['tipo_id'];
 			echo "buscar bien exter";	 
             //redirigimos a la página principal de los demas
-		header("location: mainexternos.php");
+		header("location: mainalumno.php");
 		echo "exter ok";
     }
 	elseif(mysqli_num_rows($rstprofesor)!=0){
 		//extraemos los datos de ese usuario para poder coger el nivel de acceso
 		$datos_profesor=mysqli_fetch_array($rstprofesor);
 		//creamos la variable de sesión alias
-		$_SESSION['usp_id']=$datos_profesor['usp_id'];
-		$_SESSION['usp_nombre']=$datos_profesor['usp_nombre'];
+		$_SESSION['id']=$datos_profesor['usp_id'];
+		$_SESSION['nombre']=$datos_profesor['usp_nombre'];
 		$_SESSION['tipo_id']=$datos_profesor['tipo_id'];
 		echo "buscar bien profe";
      	//redirigimos a la página principal de profesores

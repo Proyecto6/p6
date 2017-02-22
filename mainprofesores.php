@@ -30,7 +30,7 @@
   <?php
   
   
-   $sql = "SELECT * from tbl_proyecto where pro_estado = 1";
+   $sql = "SELECT * from tbl_proyecto order by pro_estado DESC;";
 
     $proyectos = mysqli_query($conexion, $sql);
 
@@ -38,7 +38,7 @@
       
       while($proyecto = mysqli_fetch_array($proyectos)){
 
-        echo "<br><a href='preguntasalumno.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br>";
+        echo "<br><a href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' > </a>";
 
         }
 
