@@ -14,14 +14,14 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Mycontacts</title>
+  <title>VOTE IT</title>
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/validacion.js"> </script>
 </head>
 
 <body>
  
-  <h1 style="color:#43A047;">My contacts</h1>
+  <h1 style="color:#43A047;">VOTE IT</h1>
   
             <?php
               if(isset($error)){
@@ -33,8 +33,8 @@
             ?>
 
     <form name="Login" action="login.proc.php" onsubmit="return validar();">
-      <input type="text" id="nombre" name="nombre" placeholder="usuario" onfocus="document.Login.nombre.style.color='';" />
-      <input type="password" id="password" name="password" placeholder="contraseña" onfocus="document.Login.password.style.color='';"/>
+      <input type="text" id="nombre" name="nombre" placeholder="Usuario" onfocus="document.Login.nombre.style.color='';" />
+      <input type="password" id="password" name="password" placeholder="Contraseña" onfocus="document.Login.password.style.color='';"/>
       <button>Entrar</button>
    
     </form>
