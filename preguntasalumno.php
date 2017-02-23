@@ -13,6 +13,29 @@
   <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="funciones.js"></script>
   <script type="text/javascript" src="js/validacion.js"> </script>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+<link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+ 
+<!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
+<link href="themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="js/star-rating.js" type="text/javascript">
+  
+  // initialize with defaults
+$("#input-id1").rating();
+ 
+// with plugin options
+$("#input-id1").rating({min:1, max:10, step:2, size:'lg'});
+
+</script>
+ 
+<!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
+<script src="themes/krajee-svg/theme.js"></script>
+ 
+<!-- optionally if you need translation for your language then include locale file as mentioned below -->
+<script src="js/locales/es.js"></script>
 
 </head>
 <body>
@@ -48,11 +71,12 @@
 
 
 
-        echo "<br><p>".$pregunta['pa_pregunta']."</p><br>".$pregunta['usa_nombre']."<br><p>nota:".$pregunta['na_nota']."</p>";
+        echo "<br><p>".$pregunta['pa_pregunta']."</p><br>".$pregunta['usa_nombre']."<br><p>nota:".$pregunta['na_nota']."</p> <br><label for='input-1' class='control-label'>Puntua</label><a href='notaalumno.proc.php?pa_id".$pregunta['pa_id']."&part_id".$pregunta['part_id']."'>
+<input id='input-1' name='input-1' class='rating rating-loading' data-min='0' data-max='5' data-step='1'> ";
 
 
-        $nota=$pregunta['na_nota'];
-        echo "<a href='notaalumno.proc.php?na_nota=".$nota."&pa_id".$pregunta['pa_id']."&part_id".$pregunta['part_id']."'>ESTRELLAS</a>";
+       
+        echo "</a>";
 
         }
         
