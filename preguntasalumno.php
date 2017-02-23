@@ -28,7 +28,21 @@ $("#input-id1").rating();
  
 // with plugin options
 $("#input-id1").rating({min:1, max:10, step:2, size:'lg'});
+/*
+var text_selected = gettext('Selected');
+  var text_not_selected = gettext('Select');
 
+   
+  $('#input-1').on('change', function() {
+       var template_id = $(this).closest('.rating-starts');
+       $('#template_id').text(template_id);
+
+       $("*").removeClass("layout-selected");
+     $(this).closest('.template-exemples').addClass("layout-selected");
+
+       $('.img_submit').text(text_not_selected)
+       $(this).text(text_selected);
+  });*/
 </script>
  
 <!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
@@ -71,8 +85,10 @@ $("#input-id1").rating({min:1, max:10, step:2, size:'lg'});
 
 
 
-        echo "<br><p>".$pregunta['pa_pregunta']."</p><br>".$pregunta['usa_nombre']."<br><p>nota:".$pregunta['na_nota']."</p> <br><label for='input-1' class='control-label'>Puntua</label><a href='notaalumno.proc.php?pa_id".$pregunta['pa_id']."&part_id".$pregunta['part_id']."'>
+        echo "<br><p>".$pregunta['pa_pregunta']."</p><br>".$pregunta['usa_nombre']."<br><p>nota:".$pregunta['na_nota']."</p> <br><label for='input-1' class='control-label'>Puntua</label><a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."'>
 <input id='input-1' name='input-1' class='rating rating-loading' data-min='0' data-max='5' data-step='1'> ";
+
+
 
 
        
@@ -100,3 +116,7 @@ $("#input-id1").rating({min:1, max:10, step:2, size:'lg'});
 </html>
 <footer>
 </footer>
+<?php 
+
+"SELECT * from tbl_proyecto inner join tbl_participantes on tbl_proyecto.pro_id=tbl_participantes.pro_id inner join tbl_usuarioalumno on tbl_participantes.usa_id= tbl_usuarioalumno.usa_id inner join tbl_notaalumno on tbl_participantes.part_id=tbl_notaalumno.part_id inner JOIN tbl_preguntasalumno on tbl_notaalumno.pa_id=tbl_preguntasalumno.pa_id where tbl_proyecto.pro_id= 1 ORDER BY tbl_preguntasalumno.pa_id LIMIT 0,1"
+ ?>
