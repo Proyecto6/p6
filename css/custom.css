@@ -7,15 +7,12 @@ html,
 body {
   height: 100%;
   width: 100%;
-
 }
 
-html {
-
-}
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
 hr {
   border-color: #000;
   border-width: 3px;
@@ -166,8 +163,9 @@ header {
   background-position: center;
   /*background-image: url('../img/contacts.jpg');*/
   text-align: center;
-  background-color: #BCB7B6;
+  /*background-color: #BCB7B6;*/
   color: white;
+  background: linear-gradient(135deg, rgba(214,214,214,1) 0%, rgba(134,174,204,1) 100%);
 }
 header .header-content {
   position: relative;
@@ -423,7 +421,7 @@ img::-moz-selection {
 }
 
 img.login {
-  max-width: 20%;
+  max-width: 220px;
 }
 
 body {
