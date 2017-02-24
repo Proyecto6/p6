@@ -38,11 +38,23 @@
       
       while($proyecto = mysqli_fetch_array($proyectos)){
 
-        echo "<br><a href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' > </a>";
+        if ($proyecto['pro_estado']<1){
+
+              $color= 'red';
 
         }
 
-      	}
+          else{
+
+             $color= 'green';
+
+          }
+
+       echo "<br><a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' ><img id='edit' src='img/edit.png' </a>";
+
+        
+        }
+        }
 
       else{
         echo "No hay proyectos!";

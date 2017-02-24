@@ -156,7 +156,7 @@ window.onload = function(foto1){
    $sql =" SELECT * from tbl_proyecto  
      inner join tbl_participantes on tbl_proyecto.pro_id=tbl_participantes.pro_id
    inner join tbl_usuarioalumno on tbl_participantes.usa_id= tbl_usuarioalumno.usa_id  
-   inner JOIN tbl_preguntasalumno on tbl_proyecto.pro_id=tbl_preguntasalumno.pro_id
+   inner JOIN tbl_preguntastribunal on tbl_proyecto.pro_id=tbl_preguntastribunal.pro_id
    where tbl_proyecto.pro_id= ".$_REQUEST['pro_id'];
 
    //echo $sql;
@@ -169,25 +169,14 @@ window.onload = function(foto1){
 
 
 
-        echo $pregunta['usa_nombre']."<br><p>".$pregunta['pa_pregunta']."</p> <br><label for='input-1' class='control-label'>Puntua</label><br>";
+        echo $pregunta['usa_nombre']."<br><p>".$pregunta['pt_pregunta']."</p> <br><label for='input-1' class='control-label'>Puntua</label><br>";
 
 
-        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=2&pro_id=".$_REQUEST['pro_id']."'>" ;?>
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pt_id']."&part_id=".$pregunta['part_id']."&nota=2&pro_id=".$_REQUEST['pro_id']."'>" ;?>
         <img id="star1" src='img/png/favorite.png'/></a>
         <?php
 
-        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=4&pro_id=".$_REQUEST['pro_id']."'>" ?>
-        <img id="star2" src='img/png/favorite.png'/></a>
-        <?php
-        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=6&pro_id=".$_REQUEST['pro_id']."'>" ?>
-        <img id="star3" src='img/png/favorite.png'/></a>
-        <?php
-        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=8&pro_id=".$_REQUEST['pro_id']."'>" ?>
-        <img id="star4" src='img/png/favorite.png'/></a>
-        <?php
-        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=10&pro_id=".$_REQUEST['pro_id']."'>" ?>
-        <img id="star5" src='img/png/favorite.png' /></a><br><br>
-        <?php
+        
 
 
 

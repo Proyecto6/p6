@@ -5,7 +5,7 @@
 	include("conexion.proc.php");
 	 extract($_REQUEST);
 
-  $sql = "SELECT * FROM tbl_usuario WHERE usu_email ='$_REQUEST[email]";	
+  $sql = "SELECT * FROM tbl_usuarioexterno WHERE use_user ='$_REQUEST[user]";	
   //ejecutamos la consulta
 	$resultado = mysqli_query($conexion,$sql);
 echo $sql;
