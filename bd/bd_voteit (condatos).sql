@@ -111,16 +111,17 @@ INSERT INTO `tbl_participantes` (`part_id`, `usa_id`, `pro_id`) VALUES
 
 CREATE TABLE `tbl_preguntasalumno` (
   `pa_id` int(11) NOT NULL,
-  `pa_pregunta` varchar(50) NOT NULL
+  `pa_pregunta` varchar(50) NOT NULL,
+  `pro_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `tbl_preguntasalumno`
 --
 
-INSERT INTO `tbl_preguntasalumno` (`pa_id`, `pa_pregunta`) VALUES
-(1, '¿Crees digno ?'),
-(2, '¿Crees que lo de verdad es sincero?');
+INSERT INTO `tbl_preguntasalumno` (`pa_id`, `pa_pregunta`,`pro_id`) VALUES
+(1, '¿Crees digno ?', 1),
+(2, '¿Crees que lo de verdad es sincero?', 1);
 
 -- --------------------------------------------------------
 
@@ -131,18 +132,19 @@ INSERT INTO `tbl_preguntasalumno` (`pa_id`, `pa_pregunta`) VALUES
 CREATE TABLE `tbl_preguntastribunal` (
   `pt_id` int(11) NOT NULL,
   `pt_pregunta` varchar(50) NOT NULL,
-  `pt_valor` decimal(10,0) NOT NULL
+  `pt_valor` decimal(10,0) NOT NULL,
+  `pro_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `tbl_preguntastribunal`
 --
 
-INSERT INTO `tbl_preguntastribunal` (`pt_id`, `pt_pregunta`, `pt_valor`) VALUES
-(1, '¿Como consigues ejecutar tu tesisi?', '1'),
-(2, '¿Crees Valido este estudio?', '4'),
-(3, '¿Sigues con las ganas de investigar?', '3'),
-(4, '¿Crees digno de tu nota este estudio?', '2');
+INSERT INTO `tbl_preguntastribunal` (`pt_id`, `pt_pregunta`, `pt_valor`,`pro_id`) VALUES
+(1, '¿Como consigues ejecutar tu tesisi?', '1', 1),
+(2, '¿Crees Valido este estudio?', '4', 1),
+(3, '¿Sigues con las ganas de investigar?', '3', 1),
+(4, '¿Crees digno de tu nota este estudio?', '2', 1);
 
 -- --------------------------------------------------------
 
@@ -511,6 +513,12 @@ ALTER TABLE `tbl_usuarioexterno`
 --
 ALTER TABLE `tbl_usuarioprof`
   ADD CONSTRAINT `FK_tipousuarioprof` FOREIGN KEY (`tipo_id`) REFERENCES `tbl_tipousuario` (`tipo_id`);
+
+  ALTER TABLE `tbl_preguntasalumno`
+  ADD CONSTRAINT `FK_paproyecto` FOREIGN KEY (`pro_id`) REFERENCES `tbl_proyecto` (`pro_id`);
+  
+ALTER TABLE `tbl_preguntastribunal`
+  ADD CONSTRAINT `FK_ptproyecto` FOREIGN KEY (`pro_id`) REFERENCES `tbl_proyecto` (`pro_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

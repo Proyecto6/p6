@@ -28,21 +28,106 @@ $("#input-id1").rating();
  
 // with plugin options
 $("#input-id1").rating({min:1, max:10, step:2, size:'lg'});
+
+</script>
+
+<script>
 /*
-var text_selected = gettext('Selected');
-  var text_not_selected = gettext('Select');
+window.onload = function(foto1){
 
-   
-  $('#input-1').on('change', function() {
-       var template_id = $(this).closest('.rating-starts');
-       $('#template_id').text(template_id);
 
-       $("*").removeClass("layout-selected");
-     $(this).closest('.template-exemples').addClass("layout-selected");
+        var imagen = document.getElementById("star1");
+        imagen.addEventListener('mouseover',cambiarImagen);
+        //imagen.addEventListener('mouseout',imagenIniciar);
 
-       $('.img_submit').text(text_not_selected)
-       $(this).text(text_selected);
-  });*/
+        var imagen2 = document.getElementById("star2");
+        imagen2.addEventListener('mouseover',cambiarImagen2);
+        //imagen2.addEventListener('mouseout',imagenIniciar2);
+
+        var imagen3 = document.getElementById("star3");
+        imagen3.addEventListener('mouseover',cambiarImagen3);
+        //imagen3.addEventListener('mouseout',imagenIniciar3);
+
+        var imagen4 = document.getElementById("star4");
+        imagen4.addEventListener('mouseover',cambiarImagen4);
+        //imagen4.addEventListener('mouseout',imagenIniciar4);
+
+        var imagen5 = document.getElementById("star5");
+        imagen5.addEventListener('mouseover',cambiarImagen5);
+        imagen5.addEventListener('mouseout',imagenIniciar5);
+
+        var pic1=0;
+        var pic2=0;
+        var pic3=0;
+        var pic4=0;
+        var pic5=0;
+
+        if ( pic5 = 1){
+           imagen5.addEventListener('mouseover',cambiarImagen5);
+            imagen4.addEventListener(cambiarImagen4);
+             imagen3.addEventListener(cambiarImagen3);
+              imagen2.addEventListener(cambiarImagen2);
+               imagen.addEventListener(cambiarImagen);
+        
+        } 
+
+         
+        
+        function cambiarImagen(){
+            this.setAttribute('src','img/png/shape.png');
+            pic1= 1;    
+        }
+        function imagenIniciar(){
+            this.setAttribute('src',"img/png/favorite.png");
+            
+        }
+        function cambiarImagen2(){
+            this.setAttribute('src','img/png/shape.png');
+            pic2 =0;            ;  
+        }
+        function imagenIniciar2(){
+            this.setAttribute('src',"img/png/favorite.png");
+            
+            
+          
+        }
+        function cambiarImagen3(){
+            this.setAttribute('src','img/png/shape.png');
+
+             pic3 =0;  
+        }
+        function imagenIniciar3(){
+            this.setAttribute('src',"img/png/favorite.png");
+            
+        }
+        function cambiarImagen4(){
+            this.setAttribute('src','img/png/shape.png');  
+        }
+        function imagenIniciar4(){
+            this.setAttribute('src',"img/png/favorite.png");
+
+        }
+        function cambiarImagen5(){
+            this.setAttribute('src','img/png/shape.png');
+            imagen5.addEventListener('mouseover',cambiarImagen5);
+            imagen4.addEventListener(cambiarImagen4);
+             imagen3.addEventListener(cambiarImagen3);
+              imagen2.addEventListener(cambiarImagen2);
+               imagen.addEventListener(cambiarImagen);
+              
+        }
+        function imagenIniciar5(){
+            this.setAttribute('src',"img/png/favorite.png");
+            imagen4.addEventListener(imagenIniciar4);
+             imagen3.addEventListener(imagenIniciar3);
+              imagen2.addEventListener(imagenIniciar2);
+               imagen.addEventListener(imagenIniciar);
+        }
+}
+/*
+  
+
+
 </script>
  
 <!-- optionally if you need to use a theme, then include the theme file as mentioned below -->
@@ -69,10 +154,9 @@ var text_selected = gettext('Selected');
   
    extract($_REQUEST);
    $sql =" SELECT * from tbl_proyecto  
-   inner join tbl_participantes on tbl_proyecto.pro_id=tbl_participantes.pro_id
-   inner join tbl_usuarioalumno on tbl_participantes.usa_id= tbl_usuarioalumno.usa_id 
-   inner join tbl_notaalumno on tbl_participantes.part_id=tbl_notaalumno.part_id 
-   inner JOIN tbl_preguntasalumno on tbl_notaalumno.pa_id=tbl_preguntasalumno.pa_id 
+     inner join tbl_participantes on tbl_proyecto.pro_id=tbl_participantes.pro_id
+   inner join tbl_usuarioalumno on tbl_participantes.usa_id= tbl_usuarioalumno.usa_id  
+   inner JOIN tbl_preguntasalumno on tbl_proyecto.pro_id=tbl_preguntasalumno.pro_id
    where tbl_proyecto.pro_id= ".$_REQUEST['pro_id'];
 
    //echo $sql;
@@ -85,14 +169,36 @@ var text_selected = gettext('Selected');
 
 
 
-        echo "<br><p>".$pregunta['pa_pregunta']."</p><br>".$pregunta['usa_nombre']."<br><p>nota:".$pregunta['na_nota']."</p> <br><label for='input-1' class='control-label'>Puntua</label><a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."'>
-<input id='input-1' name='input-1' class='rating rating-loading' data-min='0' data-max='5' data-step='1'> ";
+        echo $pregunta['usa_nombre']."<br><p>".$pregunta['pa_pregunta']."</p> <br><label for='input-1' class='control-label'>Puntua</label><br>";
+
+
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=2&pro_id=".$_REQUEST['pro_id']."'>;" ?>
+        <img id="star1" src='img/png/favorite.png'/></a>
+        <?php
+
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=4&pro_id=".$_REQUEST['pro_id']."'>" ?>
+        <img id="star2" src='img/png/favorite.png'/></a>
+        <?php
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=6&pro_id=".$_REQUEST['pro_id']."'>" ?>
+        <img id="star3" src='img/png/favorite.png'/></a>
+        <?php
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=8&pro_id=".$_REQUEST['pro_id']."'>" ?>
+        <img id="star4" src='img/png/favorite.png'/></a>
+        <?php
+        echo "<a href='notaalumno.proc.php?pa_id=".$pregunta['pa_id']."&part_id=".$pregunta['part_id']."&nota=10&pro_id=".$_REQUEST['pro_id']."'>" ?>
+        <img id="star5" src='img/png/favorite.png' /></a><br><br>
+        <?php
+
+
+
+
+//<input id='input-1' name='input-1' class='rating rating-loading' data-min='0' data-max='5' data-step='1'> ";
 
 
 
 
        
-        echo "</a>";
+       
 
         }
         
