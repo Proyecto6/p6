@@ -1,12 +1,18 @@
 <?php
+
+  //iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
+  session_start();
+  include("conexion.proc.php");
+                 
+extract($_REQUEST);
 //primero hacemos una consulta para obtener el id de tribunal a partir del id proyecto
-    $sql = "SELECT `id_tribunal` FROM `bd_mem_app`.`tbl_proyecto` WHERE id_proyecto =".$id_proyecto;
+    $sql = "SELECT `usp_id` FROM `tbl_proyecto` WHERE pt_id =".$_REQUEST['pt_id'];
 
     $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
     while($fila = mysqli_fetch_array($resultado)){  
 
-    $id_tribunal = $fila['id_tribunal'];
+    $id_tribunal = $fila['usp_id'];
       
     } 
 

@@ -1,5 +1,9 @@
-<?
-include ("../php/conexion.proc.php");
+<?php
+  //iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
+  session_start();
+  include("conexion.proc.php");
+                 
+extract($_REQUEST);
 //creamos una array en la cual almacenaremos los nombres de los integrantes
 $nombres = array();
 $matriculas = array();
