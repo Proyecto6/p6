@@ -69,9 +69,9 @@
                   echo "<h4><font color="."red".">$error</font></h4>";
                   unset($error);
                   unset($_SESSION['error']);
-                } //else {
-                  //echo "<p>Introduce usuario y contraseña</p>";
-                //}
+                } else {
+                  echo "<h4>Introduce usuario y contraseña</h4>";
+                }
                   ?>
                   <div class="form-group">
                     <div class="col-sm-offset-4 col-sm-4">
