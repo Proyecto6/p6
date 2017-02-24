@@ -2,8 +2,7 @@
   //iniciamos sesión
   session_start();
   //si existe la variable de sesión error la guardamos
-  if(isset($_SESSION ['error'])){
-    $error=$_SESSION['error'];
+  if(isset($_SESSION ['error_usuario'])){
     $error_usuario=$_SESSION['error_usuario'];
   }
   //destruimos la sesión para no poder llegar de manera indirecta a ninguna página posterior a la de login
@@ -64,8 +63,15 @@
                       <div class="col-sm-offset-4 col-sm-4">
                         <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" onfocus="document.Login.password.style.color='';" />
                       </div>
-                  </div><br/>
-
+                  </div>
+                  <?php if (isset($error_usuario)){
+                  echo "<h4><font color="."red".">$error_usuario</font></h4>";
+                  //unset($error_usuario);
+                  unset($_SESSION['error_usuario']);
+                } else {
+                  echo "<h4>Introduce usuario y contraseña</h4>";
+                }
+                  ?>
                     <div class="form-group">
                       <div class="col-sm-offset-4 col-sm-4">
                         <button type="submit" class="btn btn-primary btn-xl">Registrarse</button>
