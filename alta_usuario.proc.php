@@ -15,6 +15,8 @@
 echo $sql."<br>";
 echo $sql2."<br>";
 echo $sql3."<br>";
+// mira si el campo esta vacio.
+if($_REQUEST['user']!="" & $_REQUEST['password']!="" & $_REQUEST['nombre']!=""){
 	//si la consulta devuelve un registro se ha encontrado coincidencia de nombre de recurso
 	if(mysqli_num_rows($resultado)>0){
 
@@ -27,7 +29,7 @@ echo $sql3."<br>";
 
 		$_SESSION['error_usuario']="El usuario ya está registrado";
 		header("location: alta_usuario.php");
-			}
+		}
 		}
 		//si nos devuelve registros significa que ese recurso ya existe
 		//$datos_recursos=mysqli_fetch_array($resultado);
@@ -48,5 +50,10 @@ echo $sql3."<br>";
 	       header("location: login.php");
 	}
 
+	
+}else{
+	$_SESSION['error_usuario']="Hay un campo vacio.";
+	header("location: alta_usuario.php");
+}
 ?>
 	
