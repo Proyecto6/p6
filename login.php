@@ -65,7 +65,7 @@
                 } else {
                   echo "<h4>Introduce usuario y contraseña</h4>";
                 }
-                  ?>
+                  ?><br/>
                   <div class="form-group">
                     <div class="col-sm-offset-4 col-sm-4">
                       <button type="submit" class="btn btn-primary btn-xl">Entrar <i class="fa fa-check" aria-hidden="true"></i></button>

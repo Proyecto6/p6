@@ -71,7 +71,7 @@
                 } else {
                   echo "<h4>Introduce usuario y contraseña</h4>";
                 }
-                  ?>
+                  ?><br/>
                     <div class="form-group">
                       <div class="col-sm-offset-4 col-sm-4">
                         <button type="submit" class="btn btn-primary btn-xl">Registrarse</button>
@@ -79,7 +79,7 @@
                     </div>
                   </form>
                 </div>
-
+                <br/>
                 <p>¿Tienes cuenta? Inicia sesión <a href="login.php">aquí</a>.</p>
             </div><br/>
     </header>
