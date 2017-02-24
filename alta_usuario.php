@@ -12,37 +12,71 @@
 
 
 <!DOCTYPE html>
-<html >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Mycontacts</title>
-  <link rel="stylesheet" href="css/style.css">
+
+    <!-- Etiquetas meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página web Vote It">
+    <meta name="author" content="Sergi, Eric, Alejandro">
+
+    <!-- Título -->
+    <title>VOTE IT</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- JS -->
   <script type="text/javascript" src="js/validacion.js"> </script>
+
 </head>
 
-<body>
- 
-  <h1 style="color:#43A047;">VOTE IT</h1>
-  
-           
+<body id="page-top">
 
-   <form name="Login" action="alta_usuario.proc.php" onsubmit="return validar();">
-    <p>Introduce tus datos para registrarte</p>
-    
-    <label>Usuario: </label><input type="text" id="nombre" name="nombre" placeholder="Usuario" required onfocus="document.Login.nombre.style.color='';" /><br/>
-    <label>Contraseña: </label><input type="password" id="password" name="password" placeholder="Contraseña" required onfocus="document.Login.password.style.color='';"/><br/>
-    <label for="email">Email: </label> <input type="email" name="email" placeholder="Correo" required /> <span class="form_hint">Formato correcto: "name@something.com"</span><br/>
-     <!-- <li><label>Tu foto: </label><input id="foto" name="foto" type="file" ></li> -->
-     <?php if (isset($error)){
-                  echo "<h4>" . $error . "</h4>";
-                  unset($error);
-                  unset($_SESSION['error_usuario']); 
-                  }
-                  ?><br/>
-      <button type="submit">Registrarse</button>
-   
-    </form>
-  
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading"><img class="login" src="img/version1.png"></h1>
+                <hr>
+
+                <form name="Alta" class="form-horizontal" action="alta_usuario.proc.php" onsubmit="return validar();" method="POST">
+                  <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                      <input type="text" class="form-control" name="user" id="user" placeholder="Usuario" onfocus="document.Login.user.style.color='';" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-offset-4 col-sm-4">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" onfocus="document.Login.nombre.style.color='';" />
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-offset-4 col-sm-4">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" onfocus="document.Login.password.style.color='';" />
+                      </div>
+                  </div><br/>
+
+                    <div class="form-group">
+                      <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-primary btn-xl">Registrarse</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <p>¿Tienes cuenta? Inicia sesión <a href="login.php">aquí</a>.</p>
+            </div><br/>
+    </header>
+
 </body>
 </html>
-
