@@ -37,13 +37,6 @@
 
     <!-- JS -->
     <script type="text/javascript" src="js/validacion.js"> </script>
-    <!-- <script>function formulario(f) {
-    if (f.inputUsuario.value   == '') { alert ('El nombre de usuario esta vacío.');
-    f.inputUsuario.focus(); return false; }
-    if (f.inputPassword.value   == '') { alert ('La contraseña está vacía.');
-    f.inputPassword.focus(); return false; }
-    }
-  </script> -->
 
 </head>
 
