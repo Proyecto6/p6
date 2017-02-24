@@ -34,8 +34,8 @@ echo $sql;
 	} else {
 		//como no se ha encontrado coincidencias realizamos el registro
 		
-		$sql = "INSERT INTO `tbl_usuarioexterno` (`use_nombre`, `use_password`, `use_user`) VALUES
-				('$_REQUEST[nombre]', '$_REQUEST[password]', '$_REQUEST[user]')";
+		$sql = "INSERT INTO `tbl_usuarioexterno` (`use_nombre`, `use_password`, `use_user`, `tipo_id`) VALUES
+				('$_REQUEST[nombre]', '$_REQUEST[password]', '$_REQUEST[user]',3)";
 
 
 		echo $sql;
