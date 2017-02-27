@@ -5,28 +5,18 @@
   include("conexion.proc.php");
                  
 extract($_REQUEST);
-//primero hacemos una consulta para obtener el id de tribunal a partir del id proyecto
-    $sql = "SELECT `usp_id` FROM `tbl_proyecto` WHERE pt_id =".$_REQUEST['pt_id'];
-
-    $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
-
-    while($fila = mysqli_fetch_array($resultado)){  
-
-    $id_tribunal = $fila['usp_id'];
-      
-    } 
 
 //ahora hacemos otra connsulta para obtener los id integrante segun la matricula del alumno
 
 for ($cont=0; $cont < count($notas) ; $cont++) { 
 
-  $sql = "SELECT `id_integrante` FROM `bd_mem_app`.`tbl_integrante_proyecto` WHERE matricula_alumno = ".$matriculas[$cont];
+  $sql = "SELECT `part_id` FROM `tbl_participantes` WHERE usa_id = ".$matriculas[$cont];
 
     $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
     while($fila = mysqli_fetch_array($resultado)){  
 
-      $sql = "INSERT INTO `tbl_notas_tribunal` (`id_pregunta_tribunal`, `id_tribunal`, `valor_nota`, `id_integrante`) VALUES ( ".$idpreguntas[$cont].", ".$id_tribunal.", ".$notas[$cont].", ".$fila['id_integrante'].")";
+      $sql = "INSERT INTO `tbl_notatribunal` (`nt_id`,`pt_id`, `nt_nota`, `part_id`) VALUES (NULL, '".$idpreguntas[$cont]."', '".$notas[$cont]."', '".$fila['part_id']."');";
 
 
     } 
@@ -38,5 +28,12 @@ for ($cont=0; $cont < count($notas) ; $cont++) {
 
 $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
+
+
 }
+
+header("location: preguntastribunal.php?pro_id=".$proyecto);
+
+echo "\\\\\\\\".$proyecto."////////" ;
+
 ?>

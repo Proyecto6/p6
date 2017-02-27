@@ -44,7 +44,7 @@ $consulta= "SELECT usa_id FROM  tbl_participantes WHERE pro_id =". $_REQUEST['pr
 
 $resultado= mysqli_query($conexion, $consulta) or die (mysqli_error());
 
-
+$id_proyecto=$_REQUEST['pro_id'];
 
 //ahora para cada matricula haremos otra consulta para sacar los  nombres de cada matricula
 while($fila = mysqli_fetch_array($resultado)){  
@@ -94,6 +94,8 @@ $cont=0;
           <input type='number' name='notas[]' min='0' max='10' value='5'> <br><br><br>";
           echo"<input type='hidden' name='idpreguntas[]' value='".$pregunta['pt_id']."' >";
           echo"<input type='hidden' name='matriculas[]' value=".$aluid[$cont]." style='display:none;'>";
+          echo"<input type='hidden' name='proyecto' value='".$id_proyecto."' >";
+
           
         
         }
