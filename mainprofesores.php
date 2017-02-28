@@ -86,7 +86,7 @@
                     $color= 'green';
                   }
 
-                  echo "<br><a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' ><img id='edit' src='img/edit.png' </a>";
+                  echo "<a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' >Editar preguntas <i class='fa fa-pencil' aria-hidden='true'></i></a><br/><br/>";
 
                 }
               } else {
@@ -123,5 +123,3 @@
 
 </body>
 </html>
-<footer>
-</footer>
