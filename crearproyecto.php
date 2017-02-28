@@ -33,7 +33,11 @@
     <!-- JS -->
     <script type="text/javascript" src="js/validacion.js"> </script>
     <script type="text/javascript" src="funciones.js"></script>
-
+    <script>
+    $('.boton_unico').click(function() {
+        alert('Esta parte sigue en desarrollo , gracias por su paciencia');
+    });
+    </script>
 </head>
 
 <body id="page-top">
@@ -63,40 +67,13 @@
 
 <div class="header22">
   <br/><br/><br/>
-  <h1 id="homeHeading"><?php echo "<h4>Bienvenido, ".$_SESSION['nombre']."</h4>"; ?></h1>
-  <hr>
-  <p>ESCOGE UN PROYECTO PARA VOTAR</p><a href="./crearproyecto.php"><p>Crear nuevo proyecto <i class="fa fa-plus" aria-hidden="true"></i></p></a>
-      <?php
-          if(isset($_SESSION['nombre']) ){
-          //echo "<p>Bienvenido, ".$_SESSION['nombre']."</p>";
-      ?>
-      <?php
-
-          $sql = "SELECT * from tbl_proyecto order by pro_estado DESC;";
-          $proyectos = mysqli_query($conexion, $sql);
-
-              if(mysqli_num_rows($proyectos)>0){
-                while($proyecto = mysqli_fetch_array($proyectos)){
-
-                  if ($proyecto['pro_estado']<1){
-                    $color= 'red';
-                  } else {
-                    $color= 'green';
-                  }
-
-                  echo "<div class='mainprofes'><a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']." &nbsp;<a href='mostrarestadisticas.php?pro_id=".$proyecto['pro_id']."' ><i class='fa fa-bar-chart' aria-hidden='true'></i></a></div><br/><br/>";
-
-                }
-              } else {
-                echo "No hay proyectos!";
-              }
-          } else {
-        //como han intentado acceder de manera incorrecta, redirigimos a la página login.php con un mensaje de error
-            $_SESSION['error']="Tienes que loguearte primero!";
-            echo "sesion mal";
-            header("location: login.php");
-          }
-  ?>
+  <h4 id="homeHeading">Crear Producto</h4>
+  <form action="#" method="post">
+   <p style="color:black;">Título Proyecto <input type="text" name="nombre" /></p>
+   <p style="color:black;">Fecha Proyecto: <input type="date" name="fecha" /></p>
+   <input type="hidden" value=<?PHP "'".$_SESSION['nombre']."'"; ?> />
+   <p><button onclick="alert('Esta parte sigue en desarrollo , gracias por su paciencia')" class="boton_unico" style="color:black;" >ENVIAR</button></p>
+  </form>
 
 
 
