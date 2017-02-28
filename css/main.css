@@ -191,9 +191,15 @@ div.header22 {
   /*background-image: url('../img/contacts.jpg');*/
   text-align: center;
   /*background-color: #eee;*/
-  color: white;
+  color: black;
   background: linear-gradient(135deg, rgba(214,214,214,1) 0%, rgba(134,174,204,1) 100%);
+  /*z-index: 200;*/
 }
+
+/*div.header23 {
+  /*Está dedicada a tapar el fondo de abajo*/
+  /*z-index: 150;*/
+/*}*/
 
 header .header-content {
   position: relative;

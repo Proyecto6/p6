@@ -159,7 +159,7 @@ header {
   /*background-image: url('../img/contacts.jpg');*/
   text-align: center;
   /*background-color: #285f8f;*/
-  color: white;
+  color: black;
   background: linear-gradient(135deg, rgba(214,214,214,1) 0%, rgba(134,174,204,1) 100%);
 }
 header .header-content {
