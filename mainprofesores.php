@@ -61,13 +61,11 @@
       <!-- /.container-fluid -->
   </nav>
 
-  <header>
-      <div class="header-content">
-          <div class="header-content-inner">
-            <br/><br/><br/>
-              <h1 id="homeHeading"><?php echo "<h4>Bienvenido, ".$_SESSION['nombre']."</h4>"; ?></h1>
-              <hr>
-              <p>ESCOGE UN PROYECTO PARA VOTAR</p>
+<div class="header22">
+  <br/><br/><br/>
+  <h1 id="homeHeading"><?php echo "<h4>Bienvenido, ".$_SESSION['nombre']."</h4>"; ?></h1>
+  <hr>
+  <p>ESCOGE UN PROYECTO PARA VOTAR</p>
       <?php
           if(isset($_SESSION['nombre']) ){
           //echo "<p>Bienvenido, ".$_SESSION['nombre']."</p>";
@@ -100,10 +98,7 @@
           }
   ?>
 
-</div>
 
-</div>
-</header>
 
 
 <!-- jQuery -->
@@ -120,6 +115,6 @@
 <!-- Theme JavaScript -->
 <script src="js/creative.min.js"></script>
 
-
+</div>
 </body>
 </html>
