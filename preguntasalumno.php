@@ -3,6 +3,7 @@
   //iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
   session_start();
   include("conexion.proc.php");
+        
                  
 ?>
 <!DOCTYPE html>
