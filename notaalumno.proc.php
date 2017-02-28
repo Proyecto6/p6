@@ -1,20 +1,42 @@
 <?php
+
   //iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
   session_start();
   include("conexion.proc.php");
+                 
+extract($_REQUEST);
+
+//ahora hacemos otra connsulta para obtener los id integrante segun la matricula del alumno
+
+for ($cont=0; $cont < count($notas) ; $cont++) { 
+
+  $sql = "SELECT `part_id` FROM `tbl_participantes` WHERE usa_id = ".$matriculas[$cont];
+
+    $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
+
+    while($fila = mysqli_fetch_array($resultado)){  
+
+      $sql = "INSERT INTO `tbl_notaalumno` (`na_id`, `pa_id`, `na_nota`, `part_id`) VALUES (NULL, '".$idpreguntas[$cont]."', '".$notas[$cont]."', '".$fila['part_id']."');";
 
 
-   extract($_REQUEST);
+    } 
 
-   echo $_REQUEST['pa_id']."<br>";
-   echo $_REQUEST['part_id']."<br>";
-   echo $_REQUEST['nota']."<br>";
-   echo $_REQUEST['pro_id'];
+    //una vez echo el sql, ejecutamos la consuta.
+      echo "<br>";
+      echo $notas[$cont]." ".$idpreguntas[$cont]." ".$matriculas[$cont]."<br>";
+      echo $sql;  
 
-   $sql ="INSERT INTO `tbl_notaalumno` ( `na_nota`, `pa_id`, `part_id`) VALUES (".$_REQUEST['nota'].", ".$_REQUEST['pa_id'].", ".$_REQUEST['part_id'].")";
-   $ejec = mysqli_query($conexion, $sql);
+$resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
-   header("location: preguntasalumno.php?pro_id=".$_REQUEST['pro_id']."");
 
+
+}
+
+
+header("location: mainalumno.php");
+
+echo "\\\\\\\\".$proyecto."////////" ;
 
 ?>
+
+
