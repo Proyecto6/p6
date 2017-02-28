@@ -32,7 +32,12 @@ $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
 }
 
-header("location: preguntastribunal.php?pro_id=".$proyecto);
+$sql = "UPDATE `tbl_proyecto` SET `pro_estado` = '0' WHERE `tbl_proyecto`.`pro_id` = ".$proyecto ;
+
+$resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
+
+
+header("location: mainprofesores.php");
 
 echo "\\\\\\\\".$proyecto."////////" ;
 
