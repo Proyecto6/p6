@@ -68,11 +68,11 @@
 <div class="header22">
   <br/><br/><br/>
   <h4 id="homeHeading">Crear Producto</h4>
-  <form action="#" method="post">
+  <form action="./mainprofesores.php" method="post">
    <p style="color:black;">Título Proyecto <input type="text" name="nombre" /></p>
    <p style="color:black;">Fecha Proyecto: <input type="date" name="fecha" /></p>
    <input type="hidden" value=<?PHP "'".$_SESSION['nombre']."'"; ?> />
-   <p><button onclick="alert('Esta parte sigue en desarrollo , gracias por su paciencia')" class="boton_unico" style="color:black;" >ENVIAR</button></p>
+   <p><button onclick="alert('Esta parte sigue en desarrollo , gracias por su paciencia');" class="boton_unico" style="color:black;" >ENVIAR</button></p>
   </form>
 
 
