@@ -143,7 +143,7 @@
         while($pregunta = mysqli_fetch_array($preguntas_alumno)){
 
           if($pregunta['pa_id']  == 5){
-          echo "<h3>Valoració del contingut de la presentació (global) </h3>";
+          echo "<h3>Valoración del contenido de la presentación (global) </h3><br/>";
 
           }
           echo"<label>".$pregunta['pa_pregunta']."</label>
@@ -165,8 +165,9 @@
 
 
   ?>
-  <input type='submit' name='Enviar'>
-  </form>
+  <input type='submit' name='Enviar'><br/>
+  <button class="btn btn-primary" href="javacript:history.back(-2)">Volver atrás</button>
+</form><br><br>
 </div>
 </body>
 </html>

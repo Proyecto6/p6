@@ -77,7 +77,10 @@
 
                     if(mysqli_num_rows($proyectos)>0){
                       while($proyecto = mysqli_fetch_array($proyectos)){
-                        echo "<a href='preguntasalumno.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br>";
+                        echo "<a href='preguntasalumno.php?pro_id=".$proyecto['pro_id']."'>
+
+                        <div class='mainprofes'>
+                        ".$proyecto['pro_titulo']."<br>".$proyecto['pro_fecha']."</div></a><br>";
                         echo "<br/>";
                       }
 
