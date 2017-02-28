@@ -32,6 +32,30 @@ $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
 }
 
+for ($cont=0; $cont < count($notas_globales) ; $cont++) { 
+
+  $sql = "SELECT `part_id` FROM `tbl_participantes` WHERE usa_id = ".$matriculas[$cont];
+
+    $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
+
+    while($fila = mysqli_fetch_array($resultado)){  
+
+      $sql = "INSERT INTO `tbl_notatribunal` (`nt_id`,`pt_id`, `nt_nota`, `part_id`) VALUES (NULL, '".$idpreguntas[$cont]."', '".$notas_globales[$cont]."', '".$fila['part_id']."');";
+
+
+    } 
+
+    //una vez echo el sql, ejecutamos la consuta.
+      echo "<br>";
+      echo $notas[$cont]." ".$idpreguntas[$cont]." ".$matriculas[$cont]."<br>";
+      echo $sql;  
+
+$resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
+
+
+
+}
+
 $sql = "UPDATE `tbl_proyecto` SET `pro_estado` = '0' WHERE `tbl_proyecto`.`pro_id` = ".$proyecto ;
 
 $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
