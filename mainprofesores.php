@@ -64,7 +64,7 @@
   <header>
       <div class="header-content">
           <div class="header-content-inner">
-            <br/><br/>
+            <br/><br/><br/>
               <h1 id="homeHeading"><?php echo "<h4>Bienvenido, ".$_SESSION['nombre']."</h4>"; ?></h1>
               <hr>
               <p>ESCOGE UN PROYECTO PARA VOTAR</p>
@@ -86,7 +86,7 @@
                     $color= 'green';
                   }
 
-                  echo "<a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']."<br><a href='editarpreguntastribunal.php?pro_id=".$proyecto['pro_id']."' >Editar preguntas <i class='fa fa-pencil' aria-hidden='true'></i></a><br/><br/>";
+                  echo "<div class='mainprofes'><a style='color: ".$color." ' href='preguntastribunal.php?pro_id=".$proyecto['pro_id']."'>".$proyecto['pro_titulo']."</a><br>".$proyecto['pro_fecha']." &nbsp;<a href='mostrarestadisticas.php?pro_id=".$proyecto['pro_id']."' ><i class='fa fa-bar-chart' aria-hidden='true'></i></a></div><br/><br/>";
 
                 }
               } else {
