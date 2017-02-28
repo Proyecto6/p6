@@ -32,6 +32,8 @@ $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
 }
 
+$id=5;
+
 for ($cont=0; $cont < count($notas_globales) ; $cont++) { 
 
   $sql = "SELECT `part_id` FROM `tbl_participantes` WHERE usa_id = ".$matriculas[$cont];
@@ -40,19 +42,20 @@ for ($cont=0; $cont < count($notas_globales) ; $cont++) {
 
     while($fila = mysqli_fetch_array($resultado)){  
 
-      $sql = "INSERT INTO `tbl_notaalumno` (`na_id`, `pa_id`, `na_nota`, `part_id`) VALUES (NULL, '".$idpreguntas[$cont]."', '".$notas_globales[$cont]."', '".$fila['part_id']."');";
+      $sql = "INSERT INTO `tbl_notaalumno` (`na_id`, `pa_id`, `na_nota`, `part_id`) VALUES (NULL, '".$id."', '".$notas_globales[$cont]."', '".$fila['part_id']."');";
 
 
     } 
 
     //una vez echo el sql, ejecutamos la consuta.
-      echo "<br>";
+      echo "<br> Globales <br>";
       echo $notas[$cont]." ".$idpreguntas[$cont]." ".$matriculas[$cont]."<br>";
       echo $sql;  
 
 $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
 
+$id++;
 
 }
 

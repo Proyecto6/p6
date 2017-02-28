@@ -28,11 +28,13 @@ for ($cont=0; $cont < count($notas) ; $cont++) {
 
 $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
-
-
 }
 
+$id=5;
+
 for ($cont=0; $cont < count($notas_globales) ; $cont++) { 
+
+  
 
   $sql = "SELECT `part_id` FROM `tbl_participantes` WHERE usa_id = ".$matriculas[$cont];
 
@@ -40,7 +42,7 @@ for ($cont=0; $cont < count($notas_globales) ; $cont++) {
 
     while($fila = mysqli_fetch_array($resultado)){  
 
-      $sql = "INSERT INTO `tbl_notatribunal` (`nt_id`,`pt_id`, `nt_nota`, `part_id`) VALUES (NULL, '".$idpreguntas[$cont]."', '".$notas_globales[$cont]."', '".$fila['part_id']."');";
+      $sql = "INSERT INTO `tbl_notatribunal` (`nt_id`,`pt_id`, `nt_nota`, `part_id`) VALUES (NULL, '".$id."', '".$notas_globales[$cont]."', '".$fila['part_id']."');";
 
 
     } 
@@ -53,7 +55,7 @@ for ($cont=0; $cont < count($notas_globales) ; $cont++) {
 $resultado= mysqli_query($conexion, $sql) or die (mysqli_error());
 
 
-
+$id++;
 }
 
 $sql = "UPDATE `tbl_proyecto` SET `pro_estado` = '0' WHERE `tbl_proyecto`.`pro_id` = ".$proyecto ;
