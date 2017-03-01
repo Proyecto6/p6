@@ -2,6 +2,7 @@
   //iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
   session_start();
   include("conexion.proc.php");
+  extract($_REQUEST);
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +66,7 @@
     <br/><br/><br/>
     <h1 id="homeHeading"><?php echo "<h4>Bienvenido, ".$_SESSION['nombre']."</h4>"; ?></h1>
     <hr>
-    <p>INTRODUCE LAS NOTAS QUE CONSIDERES</p>
+    <p>INTRODUCE LAS NOTAS QUE CONSIDERES DEL PROYECTO <?php echo $pro_id; ?></p>
     <?php
         if(isset($_SESSION['nombre']) ){
         // echo "<p>Hola, bienvenido ".$_SESSION['nombre']."!</p>";
